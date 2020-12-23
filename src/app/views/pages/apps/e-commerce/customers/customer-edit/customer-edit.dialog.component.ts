@@ -134,11 +134,11 @@ export class CustomerEditDialogComponent implements OnInit, OnDestroy {
 		this._customer.idUser.nom= controls.nom.value;
 		this._customer.idUser.prenom = controls.prenom.value;
 		this._customer.idUser.prenom.email = controls.email.value;
-	/*	_customer.userName = controls.userName.value;
-		_customer.gender = controls.gender.value;
-		_customer.ipAddress = controls.ipAddress.value;
-		_customer.type = +controls.type.value;
-		_customer.status = this.customer.status;*/
+		this._customer.userName = controls.userName.value;
+		this._customer.gender = controls.gender.value;
+		this._customer.ipAddress = controls.ipAddress.value;
+		this._customer.type = +controls.type.value;
+		this._customer.status = this.customer.status;
 		return this._customer;
 	}
 
